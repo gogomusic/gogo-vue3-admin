@@ -1,9 +1,12 @@
 {
+  "css.customData": [
+    ".vscode/tailwindcss.json"
+  ],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "tsconfig.json": "tsconfig.*.json, env.d.ts",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE"
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE, postcss.config.*, tailwind.config.*, .gitignore"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
