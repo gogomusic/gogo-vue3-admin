@@ -16,5 +16,15 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.exclude": {
     "README.assets": true,
-  }
+  },
+  "cSpell.ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "README.md",
+    ".vscode/**",
+    "*.lock",
+    "package.json",
+    "pnpm-lock.*"
+  ]
 }
