@@ -407,3 +407,7 @@ export default defineConfig({
 > tips
 >
 > 创建的css文件需要在main.ts中直接或间接导入哦！
+
+### 安装 Element Plus
+
+[快速开始 | Element Plus](https://element-plus.org/zh-CN/guide/quickstart.html#完整引入)
