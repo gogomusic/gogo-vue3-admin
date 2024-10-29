@@ -1,13 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoGoAdmin</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GoGoAdmin</title>
+		<style>
+			.loading-wrapper {
+				position: fixed;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.loading {
+				font-size: 80px;
+				font-family: sans-serif;
+				font-weight: bold;
+				color: skyblue;
+				position: relative;
+			}
+			@media screen and (max-width: 1200px) {
+				.loading {
+					font-size: 8vw;
+				}
+			}
+			.loading::before {
+				content: '';
+				position: absolute;
+				left: 2.194285em;
+				bottom: 0.234285em;
+				width: 0.285714em;
+				height: 0.285714em;
+				border-radius: 50%;
+				border: 0.142857em solid #ddd;
+				border-bottom-color: #ff3d00;
+				animation: rotation 0.6s linear infinite;
+			}
+			.loading::after {
+				content: '';
+				width: 100%;
+				height: 10px;
+				background: skyblue;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				filter: blur(4px);
+				border-radius: 50%;
+			}
+
+			@keyframes rotation {
+				0% {
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="loading-body">
+				<div class="loading-wrapper">
+					<div class="loading">GoG &nbsp;Admin</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>

@@ -26,5 +26,8 @@
     "*.lock",
     "package.json",
     "pnpm-lock.*"
-  ]
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
