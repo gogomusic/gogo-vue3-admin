@@ -1,0 +1,13 @@
+layout:
+  footer:
+    copyright: 静夜聆雨，版权所有
+  home: 主页
+  project-desc: 一个基于 Vite + Vue3 的后台管理系统模板
+login:
+  code: 请输入验证码
+  login: 登录
+  password: 请输入登录密码
+  passwordType: 密码登录
+  remember: 记住密码
+  title: 用户登录
+  username: 请输入登录账号

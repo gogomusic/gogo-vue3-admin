@@ -411,3 +411,9 @@ export default defineConfig({
 ### 安装 Element Plus
 
 [快速开始 | Element Plus](https://element-plus.org/zh-CN/guide/quickstart.html#完整引入)
+
+### 国际化（i18n）
+
+项目使用`vue-i18n`、`@intlify/unplugin-vue-i18n`库实现项目的国际化，语言资源文件采用`yaml`格式，使用 VSCode 的`i18n Ally`插件进行管理。
+
+详见：[feat: implement i18n · d2bcd97 · 静夜聆雨/gogo-vue3-admin - Gitee.com](https://gitee.com/gogomusic99/gogo-vue3-admin/commit/d2bcd97696d25af9e14049708a914d14a92c92f0)

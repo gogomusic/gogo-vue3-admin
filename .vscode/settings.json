@@ -7,6 +7,7 @@
     "tsconfig.json": "tsconfig.*.json, *.d.ts",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
     "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE, postcss.config.*, tailwind.config.*, .gitignore",
+    ".env": ".env.*"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -14,6 +15,12 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "files.exclude": {
     "README.assets": true,
   },
@@ -27,7 +34,24 @@
     "package.json",
     "pnpm-lock.*"
   ],
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "cSpell.words": [
+    "intlify"
+  ],
+  "i18n-ally.localesPaths": [
+    "src/i18n/lang"
+  ],
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.enabledParsers": [
+    "yaml",
+  ],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.namespace": true,
+  "i18n-ally.editor.preferEditor": true,
+  "i18n-ally.enabledFrameworks": [
+    "vue"
+  ],
+  "i18n-ally.translate.engines": [
+    "google-cn"
+  ],
 }

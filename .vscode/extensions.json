@@ -3,6 +3,9 @@
     "Vue.volar",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "lokalise.i18n-ally",
+    "bradlc.vscode-tailwindcss",
+    "redhat.vscode-yaml"
   ]
 }

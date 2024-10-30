@@ -1,13 +1,19 @@
 <script setup lang="ts">
+import { useLocale } from '@/i18n/useLocale';
+import { ElConfigProvider } from 'element-plus';
 import { RouterView } from 'vue-router';
+
+const { localeLanguage } = useLocale();
 </script>
 
 <template>
-	<header>
-		<h1 class="text-2xl font-bold">GoGoAdmin</h1>
-		<nav></nav>
-	</header>
-	<RouterView />
+	<ElConfigProvider :locale="localeLanguage">
+		<header>
+			<h1 class="text-2xl font-bold">GoGoAdmin</h1>
+			<nav></nav>
+		</header>
+		<RouterView />
+	</ElConfigProvider>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>

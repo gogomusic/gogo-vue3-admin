@@ -1,0 +1,13 @@
+layout:
+  footer:
+    copyright: 静夜聆雨, all rights reserved
+  home: Home
+  project-desc: A management system template based on Vite + Vue3
+login:
+  code: please input code
+  login: Login
+  password: please input password
+  passwordType: Password
+  remember: remember me
+  title: User Login
+  username: please input username
