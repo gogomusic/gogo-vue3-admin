@@ -16,7 +16,7 @@
 
 ### 技术栈
 
-本项目使用 Vue 官方脚手架 [create-vue](https://github.com/vuejs/create-vue) 创建，使用`pnpm`作为包管理工具
+本项目使用 Vue 官方脚手架 [create-vue](https://github.com/vuejs/create-vue) 创建，使用 `pnpm`作为包管理工具
 
 - 主要技术栈：Vue3、Vite5、Vue Router、Pinia、Typescript
 - 代码规范：ESLint、Prettier
@@ -61,7 +61,7 @@ pnpm lint
 
 ### 创建项目
 
-使用`pnpm create vue@latest`创建项目
+使用 `pnpm create vue@latest`创建项目
 
 ### 代码规范
 
@@ -71,7 +71,7 @@ Prettier 在我们创建项目的时候已经自动安装好并且有了默认�
 
 可以创建一个 `.prettierignore` 文件以忽略不需要格式化的文件。
 
-本项目中，删掉了默认的配置文件`.prettierrc.json`，添加了新的`.prettierrc.cjs`
+本项目中，删掉了默认的配置文件 `.prettierrc.json`，添加了新的 `.prettierrc.cjs`
 
 #### ESLint
 
@@ -81,7 +81,7 @@ ESlint 在我们创建项目的时候已经自动安装好并且有了默认配�
 
 #### lint-staged
 
-随着项目体量的增大，全量跑一次 lint 的时间越来越长。如果在一次提交的时候，只对这一部分代码做规范化，那将大大缩短 developer 提交代码的速度，于是就诞生了一个工具：`lint-staged。`
+随着项目体量的增大，全量跑一次 lint 的时间越来越长。如果在一次提交的时候，只对这一部分代码做规范化，那将大大缩短 developer 提交代码的速度，于是就诞生了一个工具：`lint-staged`
 
 当 `lint-staged` 配合 git hooks 使用时，可以在 git 提交前的 hook 中加入 `lint-staged` 命令，这样就能在提交代码之前，对即将提交的代码进行格式化，成功之后就会提交代码
 
@@ -167,7 +167,7 @@ module.exports = Configuration;
 
 **husky**可以在项目中植入你设定的 git hooks，在 git 提交代码的前后，你预设的 git hooks 可以得到执行，以对代码、文件等进行预设的检查，一旦检查不通过，就可以阻止当前的代码提交，避免了不规范的代码和 git 提交出现在项目中
 
-本项目使用`husky v9`版本，与 v4 版本用法有区别，请注意
+本项目使用 `husky v9`版本，与 v4 版本用法有区别，请注意
 
 ##### 安装
 
@@ -223,36 +223,35 @@ npm run build
 
 我们想要将它们放在项目文件夹中的原因是我们可以设置仅适用于该项目的特定设置，并且我们可以通过将它们包含在代码仓库中来与我们团队的其他成员共享它们。
 
-在 *.vscode/settings.json* 中，我们将添加以下值
+在 _.vscode/settings.json_ 中，我们将添加以下值
 
 ```json
 {
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-  "tsconfig.json": "tsconfig.*.json, env.d.ts",
-  "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-  "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": "explicit"
-  }
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"tsconfig.json": "tsconfig.*.json, env.d.ts",
+		"vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": "explicit"
+	}
 }
 ```
 
-以上将告诉 VS Code 
+以上将告诉 VS Code
 
 1. 资源管理器中启用文件嵌套。文件嵌套允许目录中的相关文件在单个父文件下以可视方式组合在一起
-
 2. 使用你的 Prettier 扩展作为默认格式化程序（如果你愿意，可以手动覆盖另一个）并在每次保存时自动格式化你的文件并组织你的导入语句
 
 ### VSCode 代码片段
 
-在 `.vscode` 的目录下添加代码片段，在vue文件中输入<kbd>v</kbd>+<kbd>3</kbd>即可快速创建 Vue3.3+defineOptions 组件模板
+在 `.vscode` 的目录下添加代码片段，在vue文件中输入 `<kbd>`v `</kbd>`+`<kbd>`3 `</kbd>`即可快速创建 Vue3.3+defineOptions 组件模板
 
-*vue3.3.code-snippets*
+_vue3.3.code-snippets_
 
 ```json
 {
@@ -269,12 +268,11 @@ npm run build
 			"\t<div>$2</div>",
 			"</template>\n",
 			"<style lang='scss' scoped>\n",
-			"</style>",
+			"</style>"
 		],
-		"description": "Vue3.3+defineOptions快速生成模板",
-	},
+		"description": "Vue3.3+defineOptions快速生成模板"
+	}
 }
-
 ```
 
 ### 安装 SCSS
@@ -292,11 +290,11 @@ pnpm i -D ts-node
 
 2. 配置 postcss
 
-*postcss.config.cjs*
+_postcss.config.cjs_
 
 ```ts
 module.exports = {
-  plugins: {},
+	plugins: {},
 };
 ```
 
@@ -328,75 +326,73 @@ export default defineConfig({
 >
 > 1. sass 中的 @import 语法已废弃，请改为 @use
 
-
-
 ### 安装 tailwindcss
 
 [Install Tailwind CSS with Vite - Tailwind CSS](https://tailwindcss.com/docs/guides/vite#vue)
 
 安装完成后，如果有这种警告：![image-20241025171239364](README.assets/image-20241025171239364.png)
 
-可以在`.vscode`目录中添加`tailwindcss.json`文件，内容如下：
+可以在 `.vscode`目录中添加 `tailwindcss.json`文件，内容如下：
 
-```json
+````json
 {
-  "version": 1.1,
-  "atDirectives": [
-    {
-      "name": "@tailwind",
-      "description": "Use the `@tailwind` directive to insert Tailwind's `base`, `components`, `utilities` and `screens` styles into your CSS.",
-      "references": [
-        {
-          "name": "Tailwind Documentation",
-          "url": "https://tailwindcss.com/docs/functions-and-directives#tailwind"
-        }
-      ]
-    },
-    {
-      "name": "@apply",
-      "description": "Use the `@apply` directive to inline any existing utility classes into your own custom CSS. This is useful when you find a common utility pattern in your HTML that you'd like to extract to a new component.",
-      "references": [
-        {
-          "name": "Tailwind Documentation",
-          "url": "https://tailwindcss.com/docs/functions-and-directives#apply"
-        }
-      ]
-    },
-    {
-      "name": "@responsive",
-      "description": "You can generate responsive variants of your own classes by wrapping their definitions in the `@responsive` directive:\n```css\n@responsive {\n  .alert {\n    background-color: #E53E3E;\n  }\n}\n```\n",
-      "references": [
-        {
-          "name": "Tailwind Documentation",
-          "url": "https://tailwindcss.com/docs/functions-and-directives#responsive"
-        }
-      ]
-    },
-    {
-      "name": "@screen",
-      "description": "The `@screen` directive allows you to create media queries that reference your breakpoints by **name** instead of duplicating their values in your own CSS:\n```css\n@screen sm {\n  /* ... */\n}\n```\n…gets transformed into this:\n```css\n@media (min-width: 640px) {\n  /* ... */\n}\n```\n",
-      "references": [
-        {
-          "name": "Tailwind Documentation",
-          "url": "https://tailwindcss.com/docs/functions-and-directives#screen"
-        }
-      ]
-    },
-    {
-      "name": "@variants",
-      "description": "Generate `hover`, `focus`, `active` and other **variants** of your own utilities by wrapping their definitions in the `@variants` directive:\n```css\n@variants hover, focus {\n   .btn-brand {\n    background-color: #3182CE;\n  }\n}\n```\n",
-      "references": [
-        {
-          "name": "Tailwind Documentation",
-          "url": "https://tailwindcss.com/docs/functions-and-directives#variants"
-        }
-      ]
-    }
-  ]
+	"version": 1.1,
+	"atDirectives": [
+		{
+			"name": "@tailwind",
+			"description": "Use the `@tailwind` directive to insert Tailwind's `base`, `components`, `utilities` and `screens` styles into your CSS.",
+			"references": [
+				{
+					"name": "Tailwind Documentation",
+					"url": "https://tailwindcss.com/docs/functions-and-directives#tailwind"
+				}
+			]
+		},
+		{
+			"name": "@apply",
+			"description": "Use the `@apply` directive to inline any existing utility classes into your own custom CSS. This is useful when you find a common utility pattern in your HTML that you'd like to extract to a new component.",
+			"references": [
+				{
+					"name": "Tailwind Documentation",
+					"url": "https://tailwindcss.com/docs/functions-and-directives#apply"
+				}
+			]
+		},
+		{
+			"name": "@responsive",
+			"description": "You can generate responsive variants of your own classes by wrapping their definitions in the `@responsive` directive:\n```css\n@responsive {\n  .alert {\n    background-color: #E53E3E;\n  }\n}\n```\n",
+			"references": [
+				{
+					"name": "Tailwind Documentation",
+					"url": "https://tailwindcss.com/docs/functions-and-directives#responsive"
+				}
+			]
+		},
+		{
+			"name": "@screen",
+			"description": "The `@screen` directive allows you to create media queries that reference your breakpoints by **name** instead of duplicating their values in your own CSS:\n```css\n@screen sm {\n  /* ... */\n}\n```\n…gets transformed into this:\n```css\n@media (min-width: 640px) {\n  /* ... */\n}\n```\n",
+			"references": [
+				{
+					"name": "Tailwind Documentation",
+					"url": "https://tailwindcss.com/docs/functions-and-directives#screen"
+				}
+			]
+		},
+		{
+			"name": "@variants",
+			"description": "Generate `hover`, `focus`, `active` and other **variants** of your own utilities by wrapping their definitions in the `@variants` directive:\n```css\n@variants hover, focus {\n   .btn-brand {\n    background-color: #3182CE;\n  }\n}\n```\n",
+			"references": [
+				{
+					"name": "Tailwind Documentation",
+					"url": "https://tailwindcss.com/docs/functions-and-directives#variants"
+				}
+			]
+		}
+	]
 }
-```
+````
 
-然后在`settings.json`中添加：
+然后在 `settings.json`中添加：
 
 ```json
   "css.customData": [
@@ -414,6 +410,6 @@ export default defineConfig({
 
 ### 国际化（i18n）
 
-项目使用`vue-i18n`、`@intlify/unplugin-vue-i18n`库实现项目的国际化，语言资源文件采用`yaml`格式，使用 VSCode 的`i18n Ally`插件进行管理。
+项目使用 `vue-i18n`、`@intlify/unplugin-vue-i18n`库实现项目的国际化，语言资源文件采用 `yaml`格式，使用 VSCode 的 `i18n Ally`插件进行管理。
 
-详见：[feat: implement i18n · d2bcd97 · 静夜聆雨/gogo-vue3-admin - Gitee.com](https://gitee.com/gogomusic99/gogo-vue3-admin/commit/d2bcd97696d25af9e14049708a914d14a92c92f0)
+详见：[feat: implement i18n · d2bcd97 · 静夜聆雨/gogo-vue3-admin - Gitee.com](https://gitee.com/gogomusic99/gogo-vue3-admin/commit/3519baaed00a37ded6932cb2d73d4dab12f12a8d)

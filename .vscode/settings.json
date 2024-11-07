@@ -4,10 +4,10 @@
   ],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "tsconfig.json": "tsconfig.*.json, *.d.ts",
+    "tsconfig.json": "tsconfig.*.json",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
     "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.ts, LICENSE, postcss.config.*, tailwind.config.*, .gitignore",
-    ".env": ".env.*"
+    ".env": ".env.*, env.d.ts"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -35,6 +35,7 @@
     "pnpm-lock.*"
   ],
   "cSpell.words": [
+    "APIFOX",
     "intlify"
   ],
   "i18n-ally.localesPaths": [

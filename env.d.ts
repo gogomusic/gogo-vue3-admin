@@ -5,8 +5,10 @@
 interface ImportMetaEnv {
 	/** 项目标题 */
 	readonly VITE_PROJECT_NAME: string;
-	/** 是否使用MOCK数据 */
-	readonly VITE_MOCK: 'true' | 'false';
+	/** 接口地址 */
+	readonly VITE_API_BASE_URL: string;
+	/** Apifox 云端 Mock 的 Token */
+	readonly VITE_API_APIFOX_TOKEN?: string;
 }
 
 interface ImportMeta {
