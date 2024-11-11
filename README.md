@@ -79,6 +79,8 @@ ESlint 在我们创建项目的时候已经自动安装好并且有了默认配�
 
 启用 ESLint IDE 插件，比如 [ESLint for VSCode](https://gitee.com/link?target=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Ddbaeumer.vscode-eslint)，然后你就可以在开发时获得规范检查器的反馈。这同时也避免了启动开发服务器时不必要的规范检查
 
+需要注意，新版本 ESLint (v9) 更改了配置文件为 `eslint.config.js`
+
 #### lint-staged
 
 随着项目体量的增大，全量跑一次 lint 的时间越来越长。如果在一次提交的时候，只对这一部分代码做规范化，那将大大缩短 developer 提交代码的速度，于是就诞生了一个工具：`lint-staged`
