@@ -71,4 +71,7 @@
     "typescriptreact",
     "vue"
   ],
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
 }

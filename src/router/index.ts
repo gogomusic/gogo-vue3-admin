@@ -10,6 +10,16 @@ const router = createRouter({
 			component: HomeView,
 		},
 		{
+			path: '/test',
+			name: 'test',
+			component: () => import('@/views/test/index.vue'),
+		},
+		{
+			path: '/animate',
+			name: 'animate',
+			component: () => import('@/views/animate/index.vue'),
+		},
+		{
 			path: '/404',
 			name: '404',
 			component: () => import('@/views/exception/404/index.vue'),

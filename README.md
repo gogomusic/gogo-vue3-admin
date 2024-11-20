@@ -18,7 +18,7 @@
 
 本项目使用 Vue 官方脚手架 [create-vue](https://github.com/vuejs/create-vue) 创建，使用 `pnpm`作为包管理工具
 
-- 主要技术栈：Vue3、Vite5、Vue Router、Pinia、Typescript
+- 主要技术栈：Vue3.5、Vite5、Vue Router、Pinia、Typescript
 - 代码规范：ESLint、Prettier
 
 ## 安装使用
@@ -404,7 +404,7 @@ export default defineConfig({
 
 > tips
 >
-> 创建的css文件需要在main.ts中直接或间接导入哦！
+> 创建的`css`文件需要在`main.ts`中直接或间接导入哦！
 
 ### 安装 Element Plus
 
@@ -415,3 +415,7 @@ export default defineConfig({
 项目使用 `vue-i18n`、`@intlify/unplugin-vue-i18n`库实现项目的国际化，语言资源文件采用 `yaml`格式，使用 VSCode 的 `i18n Ally`插件进行管理。
 
 详见：[feat: implement i18n · d2bcd97 · 静夜聆雨/gogo-vue3-admin - Gitee.com](https://gitee.com/gogomusic99/gogo-vue3-admin/commit/3519baaed00a37ded6932cb2d73d4dab12f12a8d)
+
+### 动画
+
+`Transition`组件配合`animate.css`可快速实现组件切换动画效果
