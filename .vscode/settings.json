@@ -36,7 +36,8 @@
   ],
   "cSpell.words": [
     "APIFOX",
-    "intlify"
+    "intlify",
+    "vnode"
   ],
   "i18n-ally.localesPaths": [
     "src/i18n/lang"
@@ -72,6 +73,6 @@
     "vue"
   ],
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }

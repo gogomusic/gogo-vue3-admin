@@ -14,7 +14,7 @@
 		<div class="h-full flex items-center outline-none">
 			<slot>
 				<ElIcon size="16">
-					<LanguageIcon :style="iconStyle" />
+					<LanguageIcon :class="className" />
 				</ElIcon>
 			</slot>
 		</div>
@@ -31,7 +31,6 @@ import {
 	ElIcon,
 	type ElTooltipProps,
 } from 'element-plus';
-import type { CSSProperties } from 'vue';
 import { useI18n } from 'vue-i18n';
 const { locale } = useI18n();
 
@@ -44,7 +43,7 @@ const languageOptions = [
 withDefaults(
 	defineProps<{
 		placement?: ElTooltipProps['placement'];
-		iconStyle?: CSSProperties;
+		className?: string;
 	}>(),
 	{
 		placement: 'bottom',
