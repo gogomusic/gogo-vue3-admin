@@ -5,9 +5,9 @@
 				<img src="/src/assets/images/logo.png" alt="" />
 			</template>
 		</Header>
-		<div class="flex">
+		<div class="flex w-full">
 			<Sidebar />
-			<slot></slot>
+			<main class="w-full"><slot></slot></main>
 		</div>
 		<Footer></Footer>
 	</div>

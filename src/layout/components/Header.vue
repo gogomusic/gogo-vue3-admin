@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 import { PROJECT_NAME } from '@/config/setting';
 import I18nIcon from '@/layout/components/I18nIcon.vue';
-import { Grid } from '@element-plus/icons-vue';
+import { FullScreen, Grid } from '@element-plus/icons-vue';
+import { useFullscreen } from '@vueuse/core';
 import { ElIcon } from 'element-plus';
 import AvatarDropdown from './AvatarDropdown.vue';
 import Theme from './Theme.vue';
+
+const { toggle } = useFullscreen(document.body);
 
 const emit = defineEmits<{
 	(e: 'logoClick'): void;
@@ -31,11 +34,14 @@ const onLogoClick = () => {
 			</li>
 		</ul>
 		<ul class="flex items-center space-r">
-			<li class="flex items-center justify-center">
+			<li class="tool-bar-item">
 				<I18nIcon class-name="dark:text-white"></I18nIcon>
 			</li>
+			<li class="tool-bar-item" @click="toggle">
+				<el-icon><FullScreen /></el-icon>
+			</li>
 			<li><Theme></Theme></li>
-			<li class="flex items-center justify-center"><AvatarDropdown /></li>
+			<li class="tool-bar-item"><AvatarDropdown /></li>
 		</ul>
 	</div>
 </template>
@@ -48,5 +54,8 @@ const onLogoClick = () => {
 	&-r > * {
 		@apply mx-2;
 	}
+}
+.tool-bar-item {
+	@apply flex items-center justify-center;
 }
 </style>

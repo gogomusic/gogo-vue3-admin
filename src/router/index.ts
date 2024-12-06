@@ -15,11 +15,6 @@ const router = createRouter({
 			component: () => import('@/views/test/index.vue'),
 		},
 		{
-			path: '/animate',
-			name: 'animate',
-			component: () => import('@/views/animate/index.vue'),
-		},
-		{
 			path: '/404',
 			name: '404',
 			component: () => import('@/views/exception/404/index.vue'),
