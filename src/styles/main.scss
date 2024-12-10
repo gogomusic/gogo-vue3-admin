@@ -1,2 +1,3 @@
 @use './base.scss';
-@use 'animate.css'
+@use 'animate.css';
+@use '../directives/v-loading/base.scss' as vLoadingBase;

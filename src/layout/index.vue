@@ -7,14 +7,14 @@
 		</Header>
 		<div class="flex w-full">
 			<Sidebar />
-			<main class="w-full"><slot></slot></main>
+			<main class="w-full"><RouterView /></main>
 		</div>
 		<Footer></Footer>
 	</div>
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router';
+import { useRouter, RouterView } from 'vue-router';
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Sidebar from './components/Sidebar.vue';
