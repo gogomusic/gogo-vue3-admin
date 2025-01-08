@@ -75,4 +75,5 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "iridium.npm.packageManager": "pnpm",
 }

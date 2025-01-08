@@ -20,6 +20,8 @@
 
 - 主要技术栈：Vue3.5、Vite5、Vue Router、Pinia、Typescript
 - 代码规范：ESLint、Prettier
+- Node ^18.19.0 || >=20.5.0
+- npm >= 10.2.3
 
 ## 安装使用
 
@@ -404,7 +406,7 @@ export default defineConfig({
 
 > tips
 >
-> 创建的`css`文件需要在`main.ts`中直接或间接导入哦！
+> 创建的 `css`文件需要在 `main.ts`中直接或间接导入哦！
 
 ### 安装 Element Plus
 
@@ -418,4 +420,4 @@ export default defineConfig({
 
 ### 动画
 
-`Transition`组件配合`animate.css`可快速实现组件切换动画效果
+`Transition`组件配合 `animate.css`可快速实现组件切换动画效果
