@@ -1,12 +1,94 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* noto-sans-sc-100 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 100;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-100.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-200 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 200;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-200.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-300 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-300.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-regular - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-regular.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-500 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-500.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-600 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-600.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-700 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-700.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-800 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-800.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-sc-900 - chinese-simplified */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Noto Sans SC';
+	font-style: normal;
+	font-weight: 900;
+	src: url('/fonts/noto-sans-sc-v37-chinese-simplified-900.woff2')
+		format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 html,
 body,
 #root {
-  font-family: OPPOSans, Arial, sans-serif, '微软雅黑';
+	font-family: 'Noto Sans SC', Arial, sans-serif, '微软雅黑';
 }
